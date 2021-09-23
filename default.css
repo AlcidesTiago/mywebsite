@@ -10,6 +10,7 @@
     --themeDotBorder:#24292e;
 
     --previewBg:rgb(251, 249, 243, 0.8);
+    --previewShadow:#f6ead6;
 }
 html, body{
     padding: 0;
@@ -78,7 +79,7 @@ p, li, span, label, input, textarea{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3em 30em;
+    /* grid-template-rows: 3em 30em; */
     grid-template-areas: 
         'nav-wrapper nav-wrapper'
         'Left-column Right-column'
@@ -196,20 +197,76 @@ p, li, span, label, input, textarea{
 
 .Right-column{
     grid-area: Right-column;
-    /* border: 1px dashed lightcoral; */
+    display: grid;
+    align-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+#preview-shadow{
+    background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 #preview{
     width: 300px;
-    border:1.5px solid #17a2b8;
+    border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
-    padding: 15px;
-
-    
+    padding: 15px;   
+    position: relative;
 }
+
+.corner{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1.5px solid#17a2b8;
+    background-color: #fff;
+    position: absolute;
+}
+
+#corner-tl{
+    top: -5px;
+    left: -5px;
+}
+
+#corner-tr{
+    top: -5px;
+    right: -5px;
+}
+
+#corner-br{
+    bottom: -5px;
+    right: -5px;
+}
+
+#corner-bl{
+    bottom: -5px;
+    left: -5px;
+}   
 
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
     } 
+}
+
+/* Making it responsive */
+@media screen and (max-width: 800px){
+    .intro-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'Left-column'
+            'Right-column'
+        ;
+    }
+
+    .Right-column{
+        justify-content: center;
+    }
 }
