@@ -14,7 +14,8 @@
     --secondaryTextColor: #4b5156;
     --themeDotBorder: #24292e;
     --previewBg: rgb(251, 249, 243, 0.8);
-    --previewShadow: #f6ead6;
+    --previewShadow01: #f6ead6;
+    --previewShadow02: #455f6e;
 }
 
 html,
@@ -31,7 +32,10 @@ h5,
 h6,
 strong {
     color: var(--mainText);
-    font-family: 'Russo One', sans-serif;
+    /* font-family: 'Russo One', sans-serif; */
+    /* font-family: 'Arimo', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Heebo', sans-serif;
     font-weight: 500;
 }
 
@@ -106,8 +110,10 @@ textarea {
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
     -box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    /* -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75); */
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: 3em 30em; */
@@ -182,7 +188,7 @@ textarea {
     width: 30px;
     background-color: black;
     border-radius: 50px;
-    -box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
     margin: 5px;
@@ -230,18 +236,23 @@ textarea {
 }
 
 #preview-shadow {
-    background-color: var(--previewShadow);
-    width: 300px;
-    height: 180px;
+    /* background-color: var(--previewShadow); */
+    background-color: var(--previewShadow02);
+    width: 305px;
+    height: 280px;
     padding-left: 30px;
     padding-top: 30px;
 }
 
 #preview {
-    width: 300px;
+    width: 305px;
     border: 1.5px solid #17a2b8;
     background-color: var(--previewBg);
-    padding: 15px;
+    /* padding: 30px; */
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
     position: relative;
 }
 
@@ -257,22 +268,54 @@ textarea {
 #corner-tl {
     top: -5px;
     left: -5px;
+    background-color: #17a2b8;
 }
 
 #corner-tr {
     top: -5px;
     right: -5px;
+    background-color: #17a2b8;
 }
 
 #corner-br {
     bottom: -5px;
     right: -5px;
+    background-color: #17a2b8;
 }
 
 #corner-bl {
     bottom: -5px;
     left: -5px;
+    background-color: #17a2b8;
 }
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-bottom: 50px;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1.5px solid #17a2b8;
+    background-color: var(--previewBg);
+}
+
+#social_image {
+    width: 112%;
+}
+
+.social-links {
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+
+/* .about-me  */
 
 @media screen and (max-width: 1200px) {
     .main-container {
