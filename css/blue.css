@@ -1,0 +1,21 @@
+/************************************************
+ *  Site     ...........: Portfolio             *
+ *  Author   ...........: Alcides Tiago         *
+ *  Data     ...........: 28 de September 2021  *
+ *  Version  ...........: 1.0                   *
+ *  Archive  ...........: blue.css           *
+ ************************************************/
+
+:root {
+    --primaryColor: #15202b;
+    --secondaryColor: #192734;
+    --borderColor: #164d56;
+    --mainText: #fff;
+    --secondaryTextColor: #eeeeee;
+    --themeDotBorder: #FFF;
+    --previewBg: rgb(25, 39, 52, 0.8);
+    /* --previewShadow01: #111921; */
+    --previewShadow02: #455f6e;
+    /* --buttonColor: black; */
+    --buttonColor: #17a2b8;
+}

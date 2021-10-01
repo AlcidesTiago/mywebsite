@@ -1,0 +1,21 @@
+/************************************************
+ *  Site     ...........: Portfolio             *
+ *  Author   ...........: Alcides Tiago         *
+ *  Data     ...........: 28 de September 2021  *
+ *  Version  ...........: 1.0                   *
+ *  Archive  ...........: purple.css           *
+ ************************************************/
+
+:root {
+    --primaryColor: #46344e;
+    --secondaryColor: #382a3f;
+    --borderColor: #161914;
+    --mainText: #fff;
+    --secondaryTextColor: #eeeeee;
+    --themeDotBorder: #FFF;
+    --previewBg: rgb(29, 21, 32, 0.8);
+    /* --previewShadow01: #111921; */
+    --previewShadow02: #2b202f;
+    --buttonColor: #8534a3;
+    /* --buttonColor: #17a2b8; */
+}
