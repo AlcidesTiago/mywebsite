@@ -28,13 +28,14 @@ body {
     /* background-color: rgba($iconColor, 0.05); */
 }
 
-body * {
+
+/* body * {
     transition: 0.4sec;
     -webkit-transition: 0.4sec;
     -moz-transition: 0.4sec;
     -ms-transition: 0.4sec;
     -o-transition: 0.4sec;
-}
+} */
 
 h1,
 h2,
@@ -354,7 +355,7 @@ textarea {
     width: 112%;
 }
 
-.social-container {
+.social-links {
     margin-top: 5px;
     display: grid;
     gap: 20px;
@@ -362,7 +363,7 @@ textarea {
     text-align: justify;
 }
 
-.social-container ul,
+.social-links ul,
 li,
 h3 {
     margin-top: 0px;
